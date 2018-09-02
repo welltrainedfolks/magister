@@ -1,0 +1,50 @@
+<section class="section">
+    <form action="/login/" method="POST">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header has-text-centered">
+                        <p class="card-header-title">
+                            Login
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            {errorsDiv}
+                        </div>
+                        <div class="content">
+                            <div class="field">
+                                <div class="control has-icons-left has-icons-right" id="email-div">
+                                    <input class="input" placeholder="Email or login" name="login" value="{login}">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control has-icons-left" id="password-div">
+                                    <input class="input" type="password" placeholder="Password" name="password" id="password">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="button is-warning" href="/reset_password/">
+                                        Reset password
+                                    </a>
+                                </p>
+                                <p class="control is-expanded"></p>
+                                <p class="control">
+                                    <input class="button is-success" type="submit" value="Login"></input>
+                                </p>
+                            </div>
+                            <input class="is-hidden" name="_magcsrf" value="{csrf_token}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,17 @@
+http:
+  address: "0.0.0.0"
+  port: "8900"
+  domain: "http://localhost:8900"
+  session_validity_days: 30
+database:
+  host: "localhost:3306"
+  user: "magister"
+  password: "magister"
+  dbname: "magister"
+mailsender:
+  host: "localhost:25"
+  user: ""
+  password: ""
+  from: "test@pztrn.name"
+site:
+  name: "MAGISTER instance"
